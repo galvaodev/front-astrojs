@@ -1,17 +1,19 @@
 ---
+import { getApi } from '../services/getApi';
 interface Props {
 	title: string;
 	body: string;
 	href: string;
 }
+const data = await getApi();
+const response = await data?.json();
 
 const { href, title, body } = Astro.props;
 ---
-
 <li class="link-card">
 	<a href={href}>
 		<h2>
-			{title}
+			{response.character?.character.name}
 			<span>&rarr;</span>
 		</h2>
 		<p>
