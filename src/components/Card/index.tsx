@@ -14,20 +14,20 @@ export default function Card() {
         {character.character ? (
           <div>
             <p class="text-slate-50 font-medium">Nome:</p>
-            <p className="text-3xl font-body font-medium text-slate-50 columns-12">
+            <p className="text-3xl font-body font-medium text-slate-50">
               {character.character}
             </p>
             <p class="text-slate-50 font-medium mt-5">Mundo:</p>
-            <p className="text-3xl font-body font-medium text-slate-50  columns-12">
+            <p className="text-3xl font-body font-medium text-slate-50">
               {character.world}
             </p>
             <p class="text-slate-50 font-medium mt-5">Level:</p>
-            <p className="text-3xl font-body font-medium text-slate-50  columns-12">
+            <p className="text-3xl font-body font-medium text-slate-50">
               {character.level}
             </p>
 
             <p class="text-slate-50 font-medium mt-5">Vocação:</p>
-            <p className="text-3xl font-body font-medium text-slate-50  columns-12">
+            <p className="text-3xl font-body font-medium text-slate-50">
               {character.vocation}
             </p>
           </div>
