@@ -1,13 +1,28 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card/index';
-import Form from '../components/Form/index';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card/index";
+import Form from "../components/Form/index";
 ---
+
 <Layout>
-	<main>
-		<Form client:only="react"/>
-		<Card client:only="react"/>
-	</main>
+	<div class="container mx-auto h-screen flex items-center">
+		<div class="flex justify-between flex-wrap">
+			<div class="w-full lg:w-6/12">
+				<h1 class="font-body text-6xl font-black leading-none">
+					Descubra os Segredos do Seu Herói: Rastreador de Personagens
+					Épico!
+				</h1>
+
+				<h2 class="text-1xl mt-12">
+					Descubra conquistas épicas, itens valiosos e a evolução do
+					seu personagem. Conecte-se com a comunidade e conheça todos
+					os segredos do seu herói. Clique e embarque nessa aventura!
+				</h2>
+				<Form client:only="react" />
+			</div>
+			<div class="w-5/12 p-4">
+				<Card client:only="react" />
+			</div>
+		</div>
+	</div>
 </Layout>
-
-
